@@ -4,6 +4,7 @@ def is_palindrome_sentence(sentence):
     for char in sentence:
         if char.isalpha():
             string+=char
+
     return string[::-1].casefold() == string.casefold()
 
 
