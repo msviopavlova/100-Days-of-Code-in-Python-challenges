@@ -4,28 +4,58 @@ direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
-def encrypt(text, shift):
-  encrypted_text = ""
-  for letter in text:
-    index_of_letter = alphabet.index(letter)+shift
-    index_of_letter = index_of_letter%len(alphabet)
-    correct_letter=alphabet[index_of_letter]
-    encrypted_text+=correct_letter
-  print(f"Your encrypted word is: {encrypted_text}")
+
+#OLD SOLUTION
+
+# def encrypt(text, shift):
+#   encrypted_text = ""
+#   for letter in text:
+#     index_of_letter = alphabet.index(letter)+shift
+#     index_of_letter = index_of_letter%len(alphabet)
+#     correct_letter=alphabet[index_of_letter]
+#     encrypted_text+=correct_letter
+#   print(f"Your encrypted word is: {encrypted_text}")
+#
+#
+# def decrypt(text, shift):
+#   decrypted_text = ""
+#   for letter in text:
+#     index_of_letter = alphabet.index(letter)-shift
+#     index_of_letter = index_of_letter%len(alphabet) # questionable
+#     correct_letter=alphabet[index_of_letter]
+#     decrypted_text+=correct_letter
+#   print(f"You decrypted word is:{decrypted_text}")
+
+#
+# if direction ==  "encode":
+#   encrypt(text, shift)
+# elif direction == "decode":
+#   decrypt(text, shift)
 
 
-def decrypt(text, shift):
-  decrypted_text = ""
-  for letter in text:
-    index_of_letter = alphabet.index(letter)-shift
-    index_of_letter = index_of_letter%len(alphabet) # questionable
-    correct_letter=alphabet[index_of_letter]
-    decrypted_text+=correct_letter
-  print(f"You decrypted word is:{decrypted_text}")
+
+def caesar(start_text, shift_amount, cipher_direction):
+  end_text = ""
+  if cipher_direction == "decode":
+    shift_amount = shift_amount * -1
+  for letter in start_text:
+     index_of_letter = alphabet.index(letter)+shift_amount
+     index_of_letter = index_of_letter%len(alphabet)
+     correct_letter=alphabet[index_of_letter]
+     end_text+=correct_letter
+  print(end_text)
 
 
-if direction ==  "encode":
-  encrypt(text, shift)
-elif direction == "decode":
-  decrypt(text, shift)
+
+caesar(text, shift, direction)
+
+
+
+
+
+
+
+
+
+
 
