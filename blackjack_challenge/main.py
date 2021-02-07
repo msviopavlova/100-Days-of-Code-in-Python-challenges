@@ -10,6 +10,7 @@ computer_cards = []
 def deal_card(whom):
     random_card = random.choice(cards)
     whom.append(random_card)
+    return random_card
 
 
 # this for loop adds 2 card to each player in the beginning of the game
@@ -25,13 +26,33 @@ def calculate_score(who):
     score = sum(who)
     if score == 21:
         return f"{who} has a Blackjack and wins!"
-        # make the game false and stop
-        # call the mail game function to ask again 
-    return score
+    elif score > 21:
+        print(who)
+        print("game over we are over 21")
+        #another_card = input(f"your score is {score} Would you like another card? 'y' or 'n': ")
+        #if another_card == "y":
+        #  deal_card(who)
+        #  print(f"we are inside over 21 ad {who}")
+    else:
+        another_card = input(f"your score is {score} Would you like another card? 'y' or 'n': ")
+        if another_card == "y":
+            deal_card(who)
+            calculate_score(who)
+        
 
 
+
+
+
+
+
+
+
+   
+
+#calling and calculating both scores 
 current_user_score = calculate_score(user_cards)
-current_computer_score = calculate_score(computer_cards)
+#current_computer_score = calculate_score(computer_cards)
 
 
 
@@ -66,8 +87,18 @@ current_computer_score = calculate_score(computer_cards)
 
 
 
-print(user_cards)
-print(computer_cards)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
