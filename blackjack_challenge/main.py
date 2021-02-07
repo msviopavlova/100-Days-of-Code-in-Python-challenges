@@ -7,9 +7,9 @@ computer_cards = []
 
 
 #this function deals a card to whoever player is passed as a parameter and adds the card to their hand
-def deal_card(whom):
+def deal_card(current_player):
     random_card = random.choice(cards)
-    whom.append(random_card)
+    current_player.append(random_card)
     return random_card
 
 
@@ -22,37 +22,34 @@ for call in range(2):
 score_sum_user = sum(user_cards)
 score_sum_computer = sum(computer_cards)
 
-def calculate_score(who):
-    score = sum(who)
-    if score == 21:
-        return f"{who} has a Blackjack and wins!"
-    elif score > 21:
-        print(who)
+def calculate_score(player):
+    score = sum(player)
+    return score
+
+
+
+def blackjack(player):
+    current_score = calculate_score(player)
+    if current_score == 21:
+        return f"{player} has a Blackjack and wins!"
+    elif current_score > 21:
+        print(player)
         print("game over we are over 21")
-        #another_card = input(f"your score is {score} Would you like another card? 'y' or 'n': ")
-        #if another_card == "y":
-        #  deal_card(who)
-        #  print(f"we are inside over 21 ad {who}")
     else:
-        another_card = input(f"your score is {score} Would you like another card? 'y' or 'n': ")
+        another_card = input(f"your score is {current_score} Would you like another card? 'y' or 'n': ")
         if another_card == "y":
-            deal_card(who)
-            calculate_score(who)
+            deal_card(player)
+            blackjack(player)
+
+
+
         
 
 
+blackjack(user_cards)
 
 
 
-
-
-
-
-   
-
-#calling and calculating both scores 
-current_user_score = calculate_score(user_cards)
-#current_computer_score = calculate_score(computer_cards)
 
 
 
