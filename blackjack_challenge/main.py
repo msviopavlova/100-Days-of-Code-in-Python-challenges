@@ -17,20 +17,46 @@ for call in range(2):
     deal_card(user_cards)
     deal_card(computer_cards)
 
-#adding up both scores
+
 score_sum_user = sum(user_cards)
 score_sum_computer = sum(computer_cards)
 
-#checking if blackjack
+def calculate_score(who):
+    score = sum(who)
+    if score == 21:
+        return f"{who} has a Blackjack and wins!"
+        # make the game false and stop
+        # call the mail game function to ask again 
+    return score
 
-blackjack = 21
 
-if score_sum_user == blackjack:
-    print(f"your current score is {score_sum_user} Blackjack! You won!")
-    #terminate game with a flag and start again
-elif score_sum_computer == blackjack:
-    print(f"Computer's score is {score_sum_computer} and yours score is {score_sum_user} - YOU LOSE! =(((")
-    #terminate game with a flag  and start again
+current_user_score = calculate_score(user_cards)
+current_computer_score = calculate_score(computer_cards)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -53,6 +79,5 @@ print(computer_cards)
 
 
 
-def calculate_score():
-    pass
-    #return sum(user_cards)
+
+
