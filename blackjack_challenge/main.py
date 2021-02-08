@@ -35,7 +35,8 @@ def calculate_score(player):
         another_card = input(f"your score is {score} Would you like another card? 'y' or 'n': ")
         if another_card == "y":
             deal_card(player)
-            return calculate_score(player)
+            calculate_score(player) #TODO had an issue with return statement here, removed it
+
         elif another_card == "n":
             return sum(player)
 
