@@ -4,7 +4,7 @@ import random
 #start
 print(logo)
 correct_number = random.choice(range(1, 101)) #TODO remove after game well tested
-#print(f"Correct answer is {correct_number}")
+print(f"Correct answer is {correct_number}")
 
 print("Welcome to the number guessing game")
 print("I am thinking of a number between 1 and 100")
