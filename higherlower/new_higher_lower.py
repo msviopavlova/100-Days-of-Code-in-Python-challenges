@@ -1,8 +1,9 @@
 import random
 from datagame import data
+import art
+print(art.logo)
 
-
-
+print()
 #2 randomo objects
 
 def object_generator():
@@ -23,6 +24,7 @@ def checks(option_A, option_B):
             checks(option_A, new_option_B)
         else:
             print(f"Game over, you are wrong, Your score is {score}")
+            print(art.lost)
 
     elif answer == "b":
         if option_B["follower_count"] > option_A["follower_count"]:
@@ -31,6 +33,7 @@ def checks(option_A, option_B):
             checks(option_B, new_option_A)
         else:
             print(f"Game over, you are wrong, Your score is {score}")
+            print(art.lost)
 
 
 
