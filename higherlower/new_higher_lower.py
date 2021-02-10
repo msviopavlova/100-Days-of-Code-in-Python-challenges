@@ -13,13 +13,14 @@ def object_generator():
 
 score = 0
 def checks(option_A, option_B):
-    print(f"Compare A: {option_A['name']}, a {option_A['description']} from {option_A['country']} pssssss following is {option_A['follower_count']}")
-    print(f"Against B: {option_B['name']}, a {option_B['description']} from {option_B['country']} pssssss following is {option_B['follower_count']}")
+    print(f"Compare A: {option_A['name']}, a {option_A['description']} from {option_A['country']}")
+    print(f"Against B: {option_B['name']}, a {option_B['description']} from {option_B['country']}")
     global score
     answer = input("A or B has more following?: ").casefold()
     if answer == "a":
         if option_A["follower_count"] > option_B["follower_count"]:
             score+=1
+            print(f"Your score is now {score}")
             new_option_B = object_generator()
             checks(option_A, new_option_B)
         else:
@@ -29,6 +30,7 @@ def checks(option_A, option_B):
     elif answer == "b":
         if option_B["follower_count"] > option_A["follower_count"]:
             score+=1
+            print(f"Your score is now {score}")
             new_option_A = object_generator()
             checks(option_B, new_option_A)
         else:
@@ -42,9 +44,13 @@ option_A = object_generator()
 follower_count_A = option_A["follower_count"]
 
 
+
 #B
 option_B = object_generator()
+if option_B == option_A:
+    option_B = object_generator()
 follower_count_B = option_B["follower_count"]
+
 
 checks(option_A, option_B)
 
