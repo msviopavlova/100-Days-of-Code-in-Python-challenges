@@ -65,7 +65,8 @@ while make_coffee:
     choice = input("What would you like? (espresso/latte/cappuccino)  ☕  : ")
 
     if choice == "report":
-        print(f"{resources} ")
+        for ing in resources:
+            print(f"{ing}: {resources[ing]}")
     elif choice == "off":
         print("Machine off 👋")
         make_coffee = False
