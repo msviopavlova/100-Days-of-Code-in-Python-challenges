@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c76925e-1acb-420d-8d0d-7304de2dbb1a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hundren_days_of_code.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/higherlower/new_higher_lower.py" beforeDir="false" afterPath="$PROJECT_DIR$/higherlower/new_higher_lower.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CoffeeMachine/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/CoffeeMachine/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

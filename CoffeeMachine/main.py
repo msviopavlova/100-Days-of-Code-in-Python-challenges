@@ -30,6 +30,26 @@ resources = {
     "coffee": 100,
 }
 
+print(f"{resources} resources before ")
+
+def get_change():
+    if payment > order_cost:
+        change = -(order_cost - payment)
+        print(f"Here is your change ${change}")
+        ingredients()
+    else:
+        print("Insufficient amount, money refunded")
+
+
+def ingredients():
+    global resources
+    for ing in resources:
+        order_ingredients = order["ingredients"]
+        leftover = resources[ing] - order_ingredients[ing]
+        resources[ing] = leftover
+    return resources
+
+
 
 choice = input("What would you like? (espresso/latte/cappuccino): ")
 
@@ -52,14 +72,11 @@ penny = 0.01
 payment = (quarters_given * quarter)+(dimes_given * dime)+(nickles_given * nickle)+(pennies_given * penny)
 print(f"You have paid: {payment}")
 
+
+get_change()
 #TODO check is payment higher than the cost ?
 
-if payment > order_cost:
-    change = -(order_cost-payment)
-    print(f"Here is you change ${change}")
-else:
-    print("Insufficient amount, money refunded")
-
+print(f"{resources} resources afterwards")
 
 
 
