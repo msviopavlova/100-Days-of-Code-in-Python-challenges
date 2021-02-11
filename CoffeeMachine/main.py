@@ -66,6 +66,9 @@ while make_coffee:
 
     if choice == "report":
         print(f"{resources} ")
+    elif choice == "off":
+        print("Machine off 👋")
+        make_coffee = False
     else:
         order = MENU[choice]
         order_cost = order["cost"]
