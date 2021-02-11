@@ -32,11 +32,13 @@ resources = {
 
 #print(f"{resources} resources before ")
 
-def get_change():
+def get_change(payment, order_cost):
     global make_coffee
-    if payment > order_cost:
+    global profit
+    if payment >= order_cost:
         change = -(order_cost - payment)
         print(f"Here is your change ${change}")
+        profit += order_cost
         ingredients(resources)
     else:
         print("Insufficient amount, money refunded")
@@ -49,7 +51,7 @@ def ingredients(resources):
     global make_coffee
     for ing in resources:
         order_ingredients = order["ingredients"]
-        if resources[ing] > order_ingredients[ing]:
+        if resources[ing] >= order_ingredients[ing]:
             leftover = resources[ing] - order_ingredients[ing]
             resources[ing] = leftover
             return resources
@@ -59,14 +61,16 @@ def ingredients(resources):
 
 
 
-
+profit = 0
 make_coffee = True
 while make_coffee:
+
     choice = input("What would you like? (espresso/latte/cappuccino)  ☕  : ")
 
     if choice == "report":
         for ing in resources:
             print(f"{ing}: {resources[ing]}")
+        print(f"Money: {profit}")
     elif choice == "off":
         print("Machine off 👋")
         make_coffee = False
@@ -88,7 +92,7 @@ while make_coffee:
         payment = (quarters_given * quarter)+(dimes_given * dime)+(nickles_given * nickle)+(pennies_given * penny)
         print(f"You have paid: {payment}")
 
-        get_change()
+        get_change(payment, order_cost)
 
 
 
