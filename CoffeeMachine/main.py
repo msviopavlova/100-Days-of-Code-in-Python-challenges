@@ -65,7 +65,7 @@ profit = 0
 make_coffee = True
 while make_coffee:
 
-    choice = input("What would you like? (espresso/latte/cappuccino)  ☕  : ")
+    choice = input("What would you like? (espresso/latte/cappuccino)  ☕  : ").casefold()
 
     if choice == "report":
         for ing in resources:
