@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7c76925e-1acb-420d-8d0d-7304de2dbb1a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/._oop-coffee-machine-start" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/oop-coffee-machine-start/._.DS_Store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/oop-coffee-machine-start/._coffee_maker.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/oop-coffee-machine-start/._main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/oop-coffee-machine-start/._menu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__MACOSX/oop-coffee-machine-start/._money_machine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-16-classes_objects/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-16-classes_objects/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-game-start/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-game-start/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz-game-start/quiz_brain.py" beforeDir="false" afterPath="$PROJECT_DIR$/quiz-game-start/quiz_brain.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
