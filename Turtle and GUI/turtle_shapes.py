@@ -3,10 +3,6 @@ import random
 
 lappi = Turtle()
 lappi.shape("turtle")
-lappi.color("red")
-
-
-
 
 #each time the sides increase my 1 corner
 # 360/corner = the degrees of right turn
@@ -25,7 +21,7 @@ while keep_drawing:
     corner+=1
     lappi.pencolor(random.choice(random_color))
 
-    if corner >=9:
+    if corner >=10:
          keep_drawing = False
 
 
