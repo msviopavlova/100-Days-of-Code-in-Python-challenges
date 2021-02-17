@@ -12,10 +12,6 @@ for move in range(100):
     walker.right(random_right)
     walker.pencolor(random.choice(random_color))
 
-
-
-
-
 screen = Screen()
 screen.exitonclick()
 

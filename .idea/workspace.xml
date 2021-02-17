@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c76925e-1acb-420d-8d0d-7304de2dbb1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Turtle and GUI/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turtle and GUI/turtle_shapes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turtle and GUI/turtle_random_walk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Turtle and GUI/turtle_random_walk.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/new_environment" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.turtle_random_walk">
+  <component name="RunManager" selected="Python.spirograph_challenge">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hundren_days_of_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +78,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="try_except" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="spirograph_challenge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="hundren_days_of_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +86,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/try_except" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Turtle and GUI" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try_except/try_except.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Turtle and GUI/spirograph_challenge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spirograph_challenge" />
         <item itemvalue="Python.turtle_random_walk" />
         <item itemvalue="Python.turtle_shapes" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.quiz_brain" />
-        <item itemvalue="Python.try_except" />
       </list>
     </recent_temporary>
   </component>
