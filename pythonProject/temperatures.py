@@ -10,15 +10,12 @@ list_of_temps = []
 
 
 
-
-
-
 # the number of temperatures to analyse
 for i in input().split():
     # t: a temperature expressed as an integer ranging from -273 to 5526
     t = int(i)
     list_of_temps.append(t)
-lowest_temp = min(list_of_temps)
+#lowest_temp = min(list_of_temps)
 
 
 
