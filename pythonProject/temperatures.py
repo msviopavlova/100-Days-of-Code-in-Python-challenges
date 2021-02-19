@@ -23,8 +23,9 @@ else:
         elif i < 0:
             # print("This number is negative")
             negative_number.append(i)
-
-    if positive_numbers != []:
+    if negative_number==[]:
+        print(min(positive_numbers))
+    elif positive_numbers != []:
         lowest_from_positive = min(positive_numbers)
         highest_from_negative = max(negative_number)
 
