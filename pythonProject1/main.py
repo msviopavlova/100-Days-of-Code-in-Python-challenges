@@ -8,25 +8,16 @@ screen.bgcolor("black")
 screen.title("My snake game")
 screen.tracer(0)
 
-#creating a snake body from 3 squares
-
-#i created my turtle using a for loop where there are original coordinates and then the next turtle will be added to the
-#tail of the previous one
 
 
-original_x = 0
-original_y = 0
-snake_blocks=[]
+segments=[]
 
-for t in range(3):
-    next_x = original_x - 20
-    new_snake = Turtle(shape="square")
-    new_snake.penup()
-    new_snake.color("white")
-    new_snake.setx(original_x)
-    new_snake.sety(original_y)
-    original_x = next_x
-    snake_blocks.append(new_snake)
+for position in starting_positions:
+    new_segment = Turtle("square")
+    new_segment.color("white")
+    new_segment.penup()
+    new_segment.goto(position)
+    segments.append(new_segment)
 screen.update()
 
 
@@ -37,12 +28,12 @@ while game_on:
     screen.update()
     time.sleep(0.1)
 
-    for block_number in range(len(snake_blocks)-1, 0, -1):
-        moved_x = snake_blocks[block_number-1].xcor()
-        moved_y = snake_blocks[block_number-1].ycor()
-        snake_blocks[block_number].goto(moved_x, moved_y)
-    snake_blocks[0].forward(20)
-    snake_blocks[0].left(90)
+    for block_number in range(len(segments)-1, 0, -1):
+        moved_x = segments[block_number-1].xcor()
+        moved_y = segments[block_number-1].ycor()
+        segments[block_number].goto(moved_x, moved_y)
+    segments[0].forward(20)
+    segments[0].left(90)
 
 
 
