@@ -12,19 +12,19 @@ class Player(Turtle):
         self.penup()
         self.go_back_to_start()
         self.setheading(90)
-        self.y_position = -280
+
 
 
 
     def move_up(self):
-        self.y_position += MOVE_DISTANCE
-        self.goto(0, self.y_position)
+        self.forward(MOVE_DISTANCE)
 
 
     def is_at_finishline(self):
         if self.ycor() >= FINISH_LINE_Y:
             return True
-        return False
+        else:
+            return False
 
 
     def go_back_to_start(self):
