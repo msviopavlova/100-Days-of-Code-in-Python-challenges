@@ -24,6 +24,8 @@ while len(list_of_guesses) < 50:
     data = pandas.read_csv("50_states.csv")
     list_of_states = data.state.to_list()
 
+    if guess == "Exit":
+        break
     if guess in list_of_states:
 
         list_of_guesses.append(guess)
@@ -67,7 +69,5 @@ while len(list_of_guesses) < 50:
 
 
 
+#states_to_learn.csv
 
-
-
-screen.exitonclick()
